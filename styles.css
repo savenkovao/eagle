@@ -707,22 +707,19 @@ right: 0;
 .team .members div {
 	display: inline-block;
 	width: 380px;
-	height: 542px;
-	margin: 0 30px 0 0;
+	height: auto;
+	margin: 10px 10px 0 0;
 	text-decoration: none;
 	vertical-align: top;
 	position: relative;
 }
 
 .team .members div div{
-	overflow: hidden;
-	
+	text-align: center;
 }
 
 .team .members div div>img{
-	height: 100%;
-	
-
+	width: 330px;
 }
 
 
@@ -735,9 +732,8 @@ right: 0;
 	margin-top: 30px;
 }
 
-
 .team .members div:hover div>img {
-	position:absolute;
+	position:relative;
 	left:-10px;
 	top: -10px;
 	box-shadow: 10px 10px 0 0;
@@ -859,6 +855,14 @@ right: 0;
 	line-height: 0;
 }
 
+@media screen and (max-width: 1210px) {
+
+	.works>div {
+		width: 100%;
+	}
+}
+
+
 
 .works a>div{
 	display: inline-block;
@@ -938,7 +942,7 @@ div.clients {
 
 
 .clients div.people{
-	margin-top: 85px;
+	margin-top: 15px;
 }
 
 
@@ -955,15 +959,16 @@ div.clients {
 }
 
 .clients .people div:nth-child(-n+2){
-	margin-top: 0;
+	margin-top: 70px;
 }
 
 .clients .people div:nth-child(2n){
+	margin-top: 70px;
 	margin-right: 0;
 }
 
 .clients span.sub_header_2 {
-	color: #333;
+	color: white;
 }
 
 .clients span.sub_header_2::after{
@@ -982,6 +987,7 @@ div.clients {
 
 .people span:nth-child(1) {
 	position: relative;
+	color: white;
 }
 
 .people span.sub_header_1::before{
@@ -992,7 +998,7 @@ div.clients {
 	position: absolute;
 	top: -12px;
 	left: -140px;
-	background-image: url(http://placehold.it/480x780);
+	background-image: url(images/insta-photo.jpg);
 	background-position: center;
 	background-size: cover;
 	border: 1px solid #585050;
@@ -1000,7 +1006,15 @@ div.clients {
 }
 
 
+@media screen and (max-width: 1210px) {
+	.clients .people div {
+		margin: 70px 0 0 0;
+	}
 
+	.clients .people div:nth-child(2n){
+		margin-right: 0;
+	}
+}
 
 .stories h3 {
 	margin-top: 110px;
@@ -1014,7 +1028,7 @@ div.clients {
 .stories .blog_item {
 	display: inline-block;
 	width: 380px;
-
+	margin-top: 45px;
 	margin-right: 30px;
 	text-align: left;
 }
